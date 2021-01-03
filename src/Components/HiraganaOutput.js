@@ -7,7 +7,6 @@ var ts = new TrieSearch();
 const HiraganaOutput = ({ romaji }) => {
   const hiraganaRef = useRef("");
   useEffect(() => {
-    console.log("USSSSSSSSEEEEEE EFFFEEEEEECCCCCTTTTTTT");
     var object = {
       a: { key: "あ" },
       i: { key: "い" },
@@ -307,7 +306,6 @@ const HiraganaOutput = ({ romaji }) => {
   }
 
   function copyToClipBoard(e) {
-    console.log("copying to clipboard");
     hiraganaRef.current.select();
     document.execCommand("copy");
     e.target.focus();

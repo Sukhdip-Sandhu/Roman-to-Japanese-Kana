@@ -7,7 +7,6 @@ var ts = new TrieSearch();
 const KatakanaOutput = ({ romaji }) => {
   const katakanaRef = useRef("");
   useEffect(() => {
-    console.log("USSSSSSSSEEEEEE EFFFEEEEEECCCCCTTTTTTT");
     var object = {
       a: { key: "ア" },
       i: { key: "イ" },
@@ -307,7 +306,6 @@ const KatakanaOutput = ({ romaji }) => {
   }
 
   function copyToClipBoard(e) {
-    console.log("copying to clipboard");
     katakanaRef.current.select();
     document.execCommand("copy");
     e.target.focus();
